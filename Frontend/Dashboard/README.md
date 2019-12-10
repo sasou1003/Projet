@@ -7,9 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-Présence des 6 widgets réalisés avec recharts
+Présence des 6 widgets réalisés avec recharts <br />
 Le dashboard est reponsive avec l'utilisation de Bootstrap
 
+
+<br /><br />
 
 
 ### `npm start`
