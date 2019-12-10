@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.sidebar{
+  background-color:black;
+  color: white;  
+}
+
+.card{
+  height: 25em;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 1.5em;
+    margin-top : 0.4em;
+}
+
+.vente{
+  position: relative;
+  right: 1.5em;
+}
+
+.widget5{
+    justify-content : center;
+    position: relative;
+    top: -3em;
+}
+
+.widget6{
+    justify-content : center;
+    display: flex;
+    text-align: center;
+}

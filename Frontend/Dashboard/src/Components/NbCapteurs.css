@@ -1,0 +1,58 @@
+.widget-border{
+    border:1px solid #aaaaaa;
+    border-radius: 10px;
+}
+.widget-card{
+    width:170px;
+    height: 140px;
+    position: relative;
+    padding:15px;
+    margin: 10px 5px;
+    flex-grow: 2;
+}
+
+.widget-card-text h4{
+    text-transform: uppercase;
+}
+.widget-card-text .value{
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #37474F;
+    margin:10px 0;
+    text-align: center;
+
+}
+.widget-card-text .value .fa-arrow-up{
+    color: green;
+    font-size: 0.5em;
+
+}
+
+.widget-graph{
+    width:350px;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    flex-grow: 2;
+}
+.widget-table{
+    width: 48%;
+    margin:5px;
+    font-size: 0.9em;
+}
+.widget-table .face{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1080px) {
+
+    .widget-card{
+        /* width: 250px; */
+        flex-grow: 2;
+    }
+}
+@media (max-width: 870px) {
+
+}
