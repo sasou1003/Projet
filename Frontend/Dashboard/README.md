@@ -8,6 +8,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 Présence des 6 widgets réalisés avec recharts <br />
+Accueil : Dashboard <br />
+Les widgets ne sont pas liés au back<br />
+
+Widget 1 : affiche l'évolution de la température en fonction des mois <br />
+Widget 2 : affiche la localisation des capteurs dans les logements <br />
+Widget 3 : affiche chaque mesure (airpollution, humidity, temperature) en fonction de la localisation <br />
+Widget 4 : affiche la taille des maisons des utilisateurs (proportion) <br />
+Widget 5 : affiche le nombre d'utilisateurs total <br />
+Widget 6 : affiche le nombre de capteurs total <br />
+
 Le dashboard est reponsive avec l'utilisation de Bootstrap
 
 
