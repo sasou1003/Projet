@@ -1,13 +1,16 @@
-FRONT END
-Présence des 6 widgets réalisés avec recharts
-Le dashboard est reponsive avec l'utilisation de Bootstrap
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## FRONT END
 
-In the project directory, you can run:
+
+
+Présence des 6 widgets réalisés avec recharts
+Le dashboard est reponsive avec l'utilisation de Bootstrap
+
+
 
 ### `npm start`
 
