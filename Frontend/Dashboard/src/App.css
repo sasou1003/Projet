@@ -22,8 +22,11 @@
 }
 
 .sidebar{
-  background-color:black;
-  color: white;  
+  background-color:grey;
+  color: black;
+    position: absolute;
+
+    width: 100%;
 }
 
 .card{
