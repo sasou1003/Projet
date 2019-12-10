@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
 // create a schema
-const measureSchema = new Schema({
+const MeasureSchema = new Schema({
     _id:{
         type : ObjectId,
         required : true
@@ -26,5 +26,6 @@ const measureSchema = new Schema({
     }
 });
 
+var Measuremodel = mongoose.model('Measure', MeasureSchema,'Measure');
 
-module.exports = mongoose.model('Measure', measureSchema,'Measure');
+module.exports = Measuremodel;

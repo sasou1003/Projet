@@ -14,7 +14,7 @@ const UserSchema = new Schema({
     },
     personsInHouse:{
         type : Number,
-        required :: true
+        required : true
     },
     houseSize: {
         type: String,
@@ -22,4 +22,6 @@ const UserSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('User', UserSchema,'User');
+var Usermodel =  mongoose.model('User', UserSchema,'User');
+
+module.exports = Usermodel;

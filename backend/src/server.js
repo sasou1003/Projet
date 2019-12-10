@@ -1,4 +1,3 @@
-
 // Patches
 const {inject, errorHandler} = require('express-custom-error');
 inject(); // Patch express in order to use async / await syntax
@@ -6,13 +5,16 @@ inject(); // Patch express in order to use async / await syntax
 // Require Dependencies
 require('dotenv').config();
 
-const http = require('http');
-
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
+
+//Routes
+const UserRoute = require('./routes/User.routes');
+const SensorsRoute = require('./routes/Sensors.routes');
+
 
 
 const logger = require('./util/logger');
@@ -30,8 +32,8 @@ const app = express();
 mongoose.connect(`mongodb://${mongoDbUri}/${mongoDbName}`,
     { useNewUrlParser: true,
         useUnifiedTopology: true })
-    .then(() => console.log('Connexion à MongoDB réussie !'))
-    .catch(() => console.log(`Connexion à MongoDB échouée : ${mongoDbDatabase}!`));
+    .then(() => console.log(`Connexion à MongoDB ${mongoDbName} réussie !`))
+    .catch(() => console.log(`Connexion à MongoDB échouée : ${mongoDbName}!`));
 
 
 
@@ -52,9 +54,10 @@ app.use('*', (req, res, next) => {
     next();
 })
 
-// Assign Routes
 
-app.use('/', require('./routes/router.js'));
+// Assign Routes
+app.use('/User.routes', UserRoute);
+app.use('/Sensors.routes', SensorsRoute);
 
 
 // Handle errors
@@ -77,3 +80,5 @@ app.listen(
     port,
     () => console.info('Server listening on port ', port)
 );
+
+module.exports = app;
