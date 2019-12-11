@@ -3,7 +3,9 @@
 
 Models/Routes/Controllers pour chaque collection
 
-Tous les CRUD focntionnent et ont été testé avec POSTMAN
+Tous les CRUD fonctionnent et ont été testé avec POSTMAN !
+
+Connexion sur le port 3001
 
 
 ## Run
