@@ -1,9 +1,9 @@
 # backend
 
 
-Models/Routes/Controllers 
+Models/Routes/Controllers pour chaque collection
 
-GET fait pour toutes les collections mais bug lors de l'essai sur POSTMAN
+Tous les CRUD focntionnent et ont été testé avec POSTMAN
 
 
 ## Run
