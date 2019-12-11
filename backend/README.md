@@ -1,23 +1,10 @@
 # backend
 
-## Setup
 
-1. Go to project folder
+Models/Routes/Controllers 
 
-> cd backend
+GET fait pour toutes les collections mais bug lors de l'essai sur POSTMAN
 
-2. Install Dependencies
-
-> npm run setup
-
-3. Create .env with following content
-
-````
-DB_URL=
-
-PORT=3000
-SECRET=AAA
-````
 
 ## Run
 
