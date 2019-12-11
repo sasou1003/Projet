@@ -26,6 +26,6 @@ const MeasureSchema = new Schema({
     }
 });
 
-var Measuremodel = mongoose.model('Measure', MeasureSchema,'Measure');
+var Measuremodel = mongoose.model('Measure', MeasureSchema, 'Measure');
 
 module.exports = Measuremodel;

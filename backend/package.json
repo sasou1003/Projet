@@ -24,7 +24,7 @@
         "mandatoryenv": "^1.1.1",
         "module-alias": "^2.2.2",
         "mongodb": "^3.3.3",
-        "mongoose": "^5.7.14",
+        "mongoose": "^5.8.0",
         "morgan": "^1.9.1",
         "rotating-file-stream": "^1.4.6"
     }

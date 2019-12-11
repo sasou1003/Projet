@@ -5,13 +5,14 @@ const user = require('../controllers/User.controllers');
 
 /* GET one user */
 router.get('/:userId', user.findOne);
-/* GET all users */
-router.get('/', user.findAll);
+
 /* create  one user */
-//router.post('/', user.create);
+router.post('/', user.create);
+
 /* update  one user */
-//router.put('/:userId', user.update);
+router.put('/:userId', user.update);
+
 /* DELETE  one user */
-//router.delete('/:userId', user.delete);
+router.delete('/:userId', user.delete);
 
 module.exports = router;

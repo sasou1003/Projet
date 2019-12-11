@@ -7,20 +7,21 @@ const SensorSchema = new Schema({
             type : ObjectId,
             required : true
         },
-        location: {
-            type: String,
-            required: true
-        },
         creationDate: {
             type: Date,
             required: true
         },
+        location: {
+            type: String,
+            required: true
+        },
+
         userId:{
             type : ObjectId,
             required : true
         },
     });
 
-var Sensormodel = mongoose.model('Sensors', SensorSchema, 'Sensors');
+var Sensormodel = mongoose.model('Sensors', SensorSchema, 'Sensor');
 
 module.exports = Sensormodel;

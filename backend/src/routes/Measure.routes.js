@@ -3,12 +3,16 @@ var router = express.Router();
 // we import our user controller
 const measure = require('../controllers/Measure.controllers');
 
-/* GET one user */
+/* GET one measure */
 router.get('/:measureId', measure.findOne);
-/* GET all users */
-router.get('/', measure.findAll);
 
-/* DELETE  one user */
-//router.delete('/:measureId', measure.delete);
+//CREATE one mesure
+router.post('/', measure.create);
+
+/* update  one measure */
+router.put('/:measureId', measure.update);
+
+/* DELETE  one measure */
+router.delete('/:measureId', measure.delete);
 
 module.exports = router;

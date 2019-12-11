@@ -10,30 +10,37 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
+const logger = require('./util/logger');
+
 
 //Routes
 const UserRoute = require('./routes/User.routes');
+const UsersRoute = require('./routes/Users.routes');
 const SensorsRoute = require('./routes/Sensors.routes');
+const SensorRoute = require('./routes/Sensor.routes');
+const MeasuresRoute = require('./routes/Measures.routes');
+const MeasureRoute = require('./routes/Measure.routes');
 
 
-
-const logger = require('./util/logger');
 
 // Load .env Enviroment Variables to process.env
+mongoose.Promise = global.Promise;
 const port = process.env.PORT;
 const mongoDbUri = process.env.DB_URI || 'localhost:27017';
 const mongoDbName = process.env.DB_NAME || 'DashboardProject' ;
-
+const dbURL = `mongodb://localhost:27017/${mongoDbName}`;
 
 // Instantiate an Express Application
 const app = express();
 
 //Connection BDD
-mongoose.connect(`mongodb://${mongoDbUri}/${mongoDbName}`,
-    { useNewUrlParser: true,
-        useUnifiedTopology: true })
+
+//`mongodb://${mongoDbUri}/${mongoDbName}`
+mongoose.connect("mongodb+srv://dbUser:dbPassword@cluster0-chkmn.mongodb.net/DashboardProject?retryWrites=true&w=majority",
+    {useNewUrlParser: true,
+        useUnifiedTopology: true})
     .then(() => console.log(`Connexion à MongoDB ${mongoDbName} réussie !`))
-    .catch(() => console.log(`Connexion à MongoDB échouée : ${mongoDbName}!`));
+    .catch(() => console.log(`Connexion à MongoDB échouée..`));
 
 
 
@@ -57,7 +64,11 @@ app.use('*', (req, res, next) => {
 
 // Assign Routes
 app.use('/User.routes', UserRoute);
+app.use('/Users.routes', UsersRoute);
 app.use('/Sensors.routes', SensorsRoute);
+app.use('/Sensor.routes', SensorRoute);
+app.use('/Measures.routes', MeasuresRoute);
+app.use('/Measure.routes', MeasureRoute);
 
 
 // Handle errors
