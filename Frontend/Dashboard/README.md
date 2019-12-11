@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## FRONT END
 
-
+Connexion sur le port 3000
 
 Présence des 6 widgets réalisés avec recharts <br />
 Accueil : Dashboard <br />
@@ -18,7 +18,12 @@ Widget 4 : affiche la taille des maisons des utilisateurs (proportion) <br />
 Widget 5 : affiche le nombre d'utilisateurs total <br />
 Widget 6 : affiche le nombre de capteurs total <br />
 
-Le dashboard est reponsive avec l'utilisation de Bootstrap
+Le dashboard est reponsive avec l'utilisation de Bootstrap<br />
+
+Route poru changer de pages fonctionne<br />
+
+Nous avons réussi à afficher la liste des users à partir de la BDD dans un tableau!<br />
+Nous avons également essayé de lier le fromulaire avec le back mais sans succès 
 
 
 <br /><br />
