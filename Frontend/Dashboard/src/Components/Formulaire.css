@@ -5,7 +5,7 @@
 }
 
 .labels{
-    margin-top: 2.6em;
+    margin-top: 2em;
 }
 
 input{
@@ -14,4 +14,8 @@ input{
 
 select{
     margin-left: 1em;
+}
+
+.card1{
+    height: 100%;
 }

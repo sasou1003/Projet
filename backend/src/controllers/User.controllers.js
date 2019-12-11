@@ -12,7 +12,7 @@ exports.findAll = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: err.message || 'Erreur pour trouver les utilisateurs.'
+                message: err.message || 'Erreur pour trouver les é.'
             });
         });
 };
