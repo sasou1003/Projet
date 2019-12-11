@@ -1,0 +1,17 @@
+.Form{
+    justify-content: center;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.labels{
+    margin-top: 2.6em;
+}
+
+input{
+    margin-left: 1em;
+}
+
+select{
+    margin-left: 1em;
+}

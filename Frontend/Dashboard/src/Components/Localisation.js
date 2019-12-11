@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
 import { ResponsiveContainer, PieChart, Pie, Tooltip} from 'recharts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import React, { Component } from 'react';
 
 
 const data = [
@@ -25,3 +25,4 @@ export default class Localisation extends Component {
         );
     }
 }
+

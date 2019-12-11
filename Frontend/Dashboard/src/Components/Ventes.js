@@ -3,9 +3,9 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContai
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
-const data = [{mois: 'Janvier', nbVentes: 500},{mois: 'Février', nbVentes: 700}, {mois: 'Mars', nbVentes: 1700},
-    {mois: 'Avril', nbVentes: 900}, {mois: 'Mai', nbVentes: 1000}, {mois: 'Juin', nbVentes: 700},
-    {mois: 'Juillet', nbVentes: 620},{mois: 'Août', nbVentes: 892}];
+const data = [{mois: 'Janvier', temperature: 6},{mois: 'Février', temperature: 12}, {mois: 'Mars', temperature: 10},
+    {mois: 'Avril', temperature: 13}, {mois: 'Mai', temperature: 17}, {mois: 'Juin', temperature: 20},
+    {mois: 'Juillet', temperature: 23},{mois: 'Août', temperature: 20}];
 
 class Ventes extends Component {
     constructor() {
@@ -17,7 +17,7 @@ class Ventes extends Component {
             <div style={{ width: '100%', height: 300 }}>
             <ResponsiveContainer>
             <LineChart width={510} height={300} data={data}>
-            <Line type="monotone" dataKey="nbVentes" stroke="green"/>
+            <Line type="monotone" dataKey="temperature" stroke="green"/>
             <CartesianGrid stroke="#ccc"/>
             <XAxis dataKey="mois" />
             <YAxis />
